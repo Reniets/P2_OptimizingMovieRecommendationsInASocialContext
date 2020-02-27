@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Controller">
+   <children>
+      <AnchorPane fx:id="LogInPage" prefHeight="600.0" prefWidth="810.0">
+         <children>
+            <Label layoutX="391.0" layoutY="239.0" text="User ID" />
+            <Label layoutX="247.0" layoutY="14.0" text="Movie Recommender">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="384.0" layoutY="317.0" text="Password" />
+            <TextField fx:id="UserInput" layoutX="334.0" layoutY="260.0" promptText="User ID" />
+            <PasswordField fx:id="PasswordInput" layoutX="335.0" layoutY="339.0" promptText="Password" />
+            <Button fx:id="LogInButton" defaultButton="true" layoutX="384.0" layoutY="384.0" mnemonicParsing="false" onAction="#logInButtonClicked" text="Log in" />
+            <Button fx:id="CreateProfileButton" layoutX="365.0" layoutY="426.0" mnemonicParsing="false" onAction="#createProfileButtonClicked" text="Create profile" />
+         </children>
+      </AnchorPane>
+      <VBox fx:id="FrontPage" visible="false">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Region prefHeight="25.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="ProfileButton" mnemonicParsing="false" onAction="#profileButtonClicked" text="Profile" />
+                  <Button fx:id="LogOutButton" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log out" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Label text="Recommended to you">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie0" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText1" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie1" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText2" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie2" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText3" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie3" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText4" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie4" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText5" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie5" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText6" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie6" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText7" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie7" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText8" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie8" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Text fx:id="MovieText9" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie9" textAlignment="CENTER" wrappingWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="CreateProfile" prefHeight="600.0" prefWidth="810.0" visible="false">
+         <children>
+            <Label text="Create new profile">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="14.0" layoutY="63.0" text="Username" />
+            <TextField fx:id="UsernameInput" layoutX="14.0" layoutY="86.0" promptText="Username" />
+            <Label layoutX="3.0" layoutY="145.0" text="What do you like?">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="14.0" layoutY="193.0" text="Please rate the following movies on a scale from 1-5, with 1 being the worst, and 5 being the best" />
+            <HBox layoutX="14.0" layoutY="227.0" spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Slider blockIncrement="5.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Slider blockIncrement="5.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Slider blockIncrement="5.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Slider blockIncrement="5.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/NoImage.png" />
+                           </image></ImageView>
+                        <Slider blockIncrement="5.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button layoutX="368.0" layoutY="498.0" mnemonicParsing="false" text="Create profile" />
+            <Button fx:id="CancelButton" layoutX="386.0" layoutY="534.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ProfilePage" prefHeight="600.0" prefWidth="824.0" visible="false">
+         <children>
+            <Label layoutX="608.0" layoutY="14.0" text="Similar users">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="14.0" text="Recomended by User">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="49.0" prefHeight="421.0" prefWidth="594.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.0">
+                                       <children>
+                                          <Text fx:id="MovieTitle0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.0">
+                                       <children>
+                                          <Text fx:id="MovieTitle1" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating1" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.05078125">
+                                       <children>
+                                          <Text fx:id="MovieTitle2" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating2" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.0">
+                                       <children>
+                                          <Text fx:id="MovieTitle3" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating3" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.0">
+                                       <children>
+                                          <Text fx:id="MovieTitle4" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating4" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.0">
+                                       <children>
+                                          <Text fx:id="MovieTitle5" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating5" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.05078125">
+                                       <children>
+                                          <Text fx:id="MovieTitle6" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating6" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.05078125">
+                                       <children>
+                                          <Text fx:id="MovieTitle7" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating7" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.05078125">
+                                       <children>
+                                          <Text fx:id="MovieTitle8" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating8" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@resources/NoImage.png" />
+                                 </image></ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="22.0" layoutY="17.05078125">
+                                       <children>
+                                          <Text fx:id="MovieTitle9" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="57.13671875" />
+                                          <Text fx:id="Rating9" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" textAlignment="CENTER" wrappingWidth="56.99998641014099" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Text fx:id="ProfileID" layoutX="267.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="BackButton" layoutX="394.0" layoutY="588.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
+            <AnchorPane layoutX="608.0" layoutY="49.0" prefHeight="421.0" prefWidth="178.0">
+               <children>
+                  <Button fx:id="SimilarUser0" layoutY="14.0" mnemonicParsing="false" onAction="#similarUser0Clicked" text="Button" />
+                  <Button fx:id="SimilarUser2" layoutY="76.0" mnemonicParsing="false" onAction="#similarUser2Clicked" text="Button" />
+                  <Button fx:id="SimilarUser1" layoutY="45.0" mnemonicParsing="false" onAction="#similarUser1Clicked" text="Button" />
+                  <Button fx:id="SimilarUser3" layoutY="107.0" mnemonicParsing="false" onAction="#similarUser3Clicked" text="Button" />
+                  <Button fx:id="SimilarUser4" layoutY="138.0" mnemonicParsing="false" onAction="#similarUser4Clicked" text="Button" />
+                  <Button fx:id="SimilarUser5" layoutY="169.0" mnemonicParsing="false" onAction="#similarUser5Clicked" text="Button" />
+                  <Button fx:id="SimilarUser6" layoutY="200.0" mnemonicParsing="false" onAction="#similarUser6Clicked" text="Button" />
+                  <Button fx:id="SimilarUser7" layoutY="231.0" mnemonicParsing="false" onAction="#similarUser7Clicked" text="Button" />
+                  <Button fx:id="SimilarUser8" layoutY="262.0" mnemonicParsing="false" onAction="#similarUser8Clicked" text="Button" />
+                  <Button fx:id="SimilarUser9" layoutY="293.0" mnemonicParsing="false" onAction="#similarUser9Clicked" text="Button" />
+                  <Text fx:id="Correlation0" layoutX="59.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation1" layoutX="59.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation2" layoutX="59.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation3" layoutX="59.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation4" layoutX="59.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation5" layoutX="59.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation6" layoutX="59.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation7" layoutX="59.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation8" layoutX="59.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="Correlation9" layoutX="59.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
