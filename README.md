@@ -17,3 +17,8 @@ The image below shows some of the movies user 502 has rated the highest. On the 
 The following image is a page illustrating a concept of what was planned to be a way for users to create a profile and rate some movies to avoid the cold start problem of the recommender system:
 
 ![UserCreation](images/userCreation.png)
+
+# Group Members and Report:
+Daniel Thomsen, Niki Zakariassen, Simon Steiner
+
+[Report](Report.pdf)
